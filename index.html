@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Navbar</title>
+
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Bootstrap CSS 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   
+
+   
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="bg-dark position-fixed w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo-Zauba.webp" alt="logo" width="120">
+                </a>
+
+                <!-- Toggler Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Search Icon -->
+                <div class="d-none d-lg-block text-light" id="searchSlider">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Search Bar -->
+    <div class="position-fixed search-bar-container" id="searchBar">
+        <form action="" method="post">
+            <div class="d-flex align-items-center search-bar">
+                <label for="search"></label>
+                <input type="search" name="search" id="search" class="form-control search-input" placeholder="Type here to search">
+                <button type="submit" class="btn btn-success search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section text-center text-light d-flex align-items-center">
+        <div class="container">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <h1 class="display-5 fw-bold">Lakshya Complete Solutions</h1>
+                        <p class="lead">Empowering Innovation, Delivering Excellence</p>
+                        <a href="about.html" class="btn btn-primary btn-lg mt-3">Learn More</a>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <h1 class="display-5 fw-bold">Cutting-Edge Technology</h1>
+                        <p class="lead">Building the Future with AI & Cloud Solutions</p>
+                        <a href="Services.html" class="btn btn-warning btn-lg mt-3">Our Services</a>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <h1 class="display-5 fw-bold">Your Trusted IT Partner</h1>
+                        <p class="lead">Transforming Businesses with Innovation & Expertise</p>
+                        <a href="Contact.html" class="btn btn-success btn-lg mt-3">Get in Touch</a>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- main content -->
+     <main>
+        <!-- About Us Section -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 pb-5 pb-lg-0">
+                        <h2 class="fw-bold">About Us</h2>
+                        <p class="py-lg-5 py-3">
+                            The idea behind the incorporation of Lakshya Complete Solutions Pvt. Ltd. 
+                            was conceived by Mr. Sandeep Tiwari, who had been toying with this idea 
+                            for past few years. The company was incorporated with a wide object 
+                            relating to manufacturing, fabricating, designing, assembling, and 
+                            dealing in all kinds of furniture, plants and machinery, electric fittings, 
+                            installation, and implementation of computer labs, and all types of 
+                            turnkey projects.
+                        </p>
+                        <a href="about.html" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="https://media.istockphoto.com/id/1428709516/photo/shopping-online-woman-hand-online-shopping-on-laptop-computer-with-virtual-graphic-icon.jpg?s=612x612&w=0&k=20&c=ROAncmFL4lbSQdU4VOhyXu-43ngzfEqHE5ZZAw5FtYk=" alt="About Us" class="img-fluid rounded w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Key Services Section -->
+        <section id="key-services" class="py-5 key-services">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Key Services</h2>
+                <div class="row">
+                    <!-- Service Item -->
+                    <div class="col-md-6">
+                        <img src="https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg" alt="Odisha ICT 2014-15" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 pt-5 pt-lg-3">
+                        <h4 class="fw-bold">Odisha ICT 2014-15</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-cogs text-primary me-2"></i> Service given:</li>
+                            <li class="ps-4"><i class="fas fa-check-circle text-success me-2"></i> Table installation work.</li>
+                            <li class="ps-4"><i class="fas fa-check-circle text-success me-2"></i> Powder coated table frames.</li>
+                            <li><i class="fas fa-school text-info me-2"></i> 3200 Schools of Odisha were given 41600 computer tables.</li>
+                            <li><i class="fas fa-handshake text-warning me-2"></i> In association with IL&FS educations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Our Certifications</h2>
+                <div class="row align-items-center pt-lg-3">
+                    <!-- Image Column -->
+                    <div class="col-md-6 px-lg-0 text-center border">
+                        <img src="https://brisconenergy.com/images/2020/02/24/our-certification-1.png" alt="Certifications" class="img-fluid rounded">
+                    </div>
+                    <!-- Text Content Column -->
+                    <div class="col-md-6 ps-lg-5 ps-3 pt-5 pt-lg-0">
+                        <h4 class="fw-bold">LAKSHYA is...</h4>
+                        <ul class="list-unstyled lh-4">
+                            <li><i class="fas fa-shield-alt text-primary me-2"></i> OHSAS 18001:2007 <span class="text-muted">Certified</span></li>
+                            <li><i class="fas fa-certificate text-success me-2"></i> ISO 1400:2004 <span class="text-muted">Certified</span></li>
+                            <li><i class="fas fa-award text-warning me-2"></i> ISO 9001:2008 <span class="text-muted">Certified</span></li>
+                            <li><i class="fas fa-check-circle text-info me-2"></i> ANSI/BIFMA e3-2011 <span class="text-muted">Certified</span></li>
+                        </ul>
+                        <!-- Trust Badges -->
+                        <div class="mt-5 mt-lg-3 d-flex gap-5 TrustBadges">
+                            <img src="https://img.freepik.com/premium-vector/iso-9001-2015-certification-iso-90012015-logo-iso-9000-certification_526569-642.jpg?semt=ais_hybrid" alt="ISO Certification" class="">
+                            <img src="https://i.pinimg.com/474x/00/d2/75/00d2756f57f1b2b1bb5aa3252471914a.jpg" alt="OHSAS Certification" class="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGQs9v2nKn4PMRGUvUDDyoF0qN0dfoktfuw&s" class="" alt="ANSI/BIFMA Certification">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Recent Projects Section -->
+        <section id="recent-projects" class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Recent Projects</h2>
+
+                <!-- Bootstrap Carousel -->
+                <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Project 1 -->
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="assets/img/1556021777Banner.jpg" class="d-block w-100 rounded" alt="Raj. ICT + SMART">
+                            <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                <h5>Raj. ICT + SMART</h5>
+                                <p>Electric, Earthing & Networking - 2019-20</p>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="carousel-item"  data-bs-interval="2000">
+                            <img src="assets/img/1673695737BLog-1.jpg" class="d-block w-100 rounded" alt="Raj. DIGITAL CLASS">
+                            <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                <h5>Raj. DIGITAL CLASS</h5>
+                                <p>Installation ICT - 2021-22</p>
+                            </div>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="carousel-item"  data-bs-interval="2000">
+                            <img src="assets/img/elements-media-storage-BDI-tune-LS-boy-apartment.webp" class="d-block w-100 rounded" alt="Raj. ELECTRIC & EARTHING">
+                            <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                <h5>Raj. ELECTRIC & EARTHING</h5>
+                                <p>Installation with Furniture - 2021-22</p>
+                            </div>
+                        </div>
+                        <!-- Project 4 -->
+                        <div class="carousel-item"  data-bs-interval="2000">
+                            <img src="assets/img/a1397c41-6aa2-43b9-9482-2ffc8a07363b.webp" class="d-block w-100 rounded" alt="Raj. SMART CLASS">
+                            <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                <h5>Raj. SMART CLASS</h5>
+                                <p>Installation - 2021-22</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+                <!-- View All Projects Button -->
+                <div class="text-center mt-4">
+                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="contact-section py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+
+                    <!-- Contact Form -->
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">Get in Touch</h2>
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Your message..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="col-lg-6 ps-5">
+                        <h2 class="fw-bold mb-4">Contact Information</h2>
+                        <p class="text-muted">Reach out to us for any inquiries or support.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                            <p class="mb-0"><strong>Office Address:</strong><br> 123 Business Street, City, Country</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone fa-2x text-success me-3"></i>
+                            <p class="mb-0"><strong>Phone:</strong><br> +91 98765 43210</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope fa-2x text-danger me-3"></i>
+                            <p class="mb-0"><strong>Email:</strong><br> contact@lakshya.com</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-light pt-4">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Quick Links -->
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="pt-2"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li class="pt-2"><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                        <li class="pt-2"><a href="projects.html" class="text-light text-decoration-none">Projects</a></li>
+                        <li class="pt-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-lg-6 col-md-6 text-center">
+                    <h5 class="fw-bold">Follow Us</h5>
+                    <div class="social-icons pt-3">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <!-- Copyright Info -->
+                <div class="col-lg-12 text-center text-md-center bg-dark pt-3 footer-bottom">
+                    <h5 class="fw-bold">Lakshya Complete Solutions</h5>
+                    <p class="small">&copy; 2025 Lakshya Complete Solutions Pvt. Ltd. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jquery links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/javascript/script.js" type="text/javascript"></script>
+
+</body>
+</html>
