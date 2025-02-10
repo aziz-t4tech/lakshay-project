@@ -8,7 +8,6 @@
 header {
     top: 0;
     z-index: 1000;
-    height: 81px;
 }
 
 header nav li {
