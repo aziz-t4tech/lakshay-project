@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Get the current page URL
     let currentPath = window.location.pathname.split("/").pop(); 
 
-    // Remove active class from all links
+    // Remove active class from all header navigation links
     $("header .nav-link").removeClass("active");
 
     // Add active class to the link that matches the current URL
