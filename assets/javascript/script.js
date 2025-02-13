@@ -23,3 +23,20 @@ $(document).ready(function() {
         $('#searchBar').slideToggle();
     });
 });
+
+// jQuery Filtering Script
+$(document).ready(function(){
+    $(".nav-link").click(function(){
+        $(".nav-link").removeClass("active");
+        $(this).addClass("active");
+        let filter = $(this).data("filter");
+        $(".project-item").hide();
+        if (filter == "all") {
+            $(".project-item").fadeIn();
+        } else {
+            $("." + filter).fadeIn();
+        }
+    });
+});
+
+// service code

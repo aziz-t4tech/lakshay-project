@@ -4,6 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lakshya complete solutions pvt ltd</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -11,10 +15,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <title>Responsive Navbar</title>
-
-    <!-- Custom CSS -->
-     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -64,76 +64,96 @@
     </div>
 
     <main class="mt-5">
-        <section id="projects" class="py-5 projects">
+        <!-- Projects Page -->
+        <section id="projects" class="py-5">
             <div class="container">
-                <div class="row text-center mb-5">
-                    <h2 class="section-title">Our Projects</h2>
-                    <p class="section-description">Explore our diverse range of completed projects showcasing our expertise in various domains.</p>
+                <h2 class="text-center fw-bold mb-4">Our Projects</h2>
+
+                <!-- Project Categories (Clickable Tabs) -->
+                <ul class="nav nav-pills justify-content-center mb-4" id="project-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter="all">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter="ict">ICT Installations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter="smart-class">Smart Classrooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter="electric">Electric & Earthing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter="furniture">Furniture Manufacturing</a>
+                    </li>
+                </ul>
+
+                <!-- Project Showcase Grid -->
+                <div class="row g-4" id="project-list">
+                    <!-- Example Project (ICT Installation) -->
+                    <div class="col-md-4 project-item ict">
+                        <div class="card project-card">
+                            <img src="assets/img/1556021777Banner.jpg" class="card-img-top" alt="Rajasthan ICT 2008-09">
+                            <div class="card-body">
+                                <h5 class="card-title">Rajasthan ICT 2008-09</h5>
+                                <p class="card-text">ICT Installation Project</p>
+                            </div>
+                            <div class="overlay">
+                                <a href="project-details.html?id=1" class="btn btn-light">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example Project (Smart Classroom) -->
+                    <div class="col-md-4 project-item smart-class">
+                        <div class="card project-card">
+                            <img src="assets/img/1556021777Banner.jpg" class="card-img-top" alt="Gujarat Smart Class 2019-20">
+                            <div class="card-body">
+                                <h5 class="card-title">Gujarat Smart Class 2019-20</h5>
+                                <p class="card-text">Smart Classroom Installation</p>
+                            </div>
+                            <div class="overlay">
+                                <a href="project-details.html?id=2" class="btn btn-light">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example Project (Electric & Earthing) -->
+                    <div class="col-md-4 project-item electric">
+                        <div class="card project-card">
+                            <img src="assets/img/1556021777Banner.jpg" class="card-img-top" alt="Raj. Electric & Earthing 2021-22">
+                            <div class="card-body">
+                                <h5 class="card-title">Raj. Electric & Earthing 2021-22</h5>
+                                <p class="card-text">Electric Fitting & Earthing Work</p>
+                            </div>
+                            <div class="overlay">
+                                <a href="project-details.html?id=3" class="btn btn-light">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example Project (Furniture Manufacturing) -->
+                    <div class="col-md-4 project-item furniture">
+                        <div class="card project-card">
+                            <img src="assets/img/1556021777Banner.jpg" class="card-img-top" alt="PCMC Furniture & Painting 2020-21">
+                            <div class="card-body">
+                                <h5 class="card-title">PCMC Furniture & Painting 2020-21</h5>
+                                <p class="card-text">Furniture & Painting Project</p>
+                            </div>
+                            <div class="overlay">
+                                <a href="project-details.html?id=4" class="btn btn-light">View Details</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        
-                <!-- Project Categories -->
-                <div class="row mb-4">
-                    <div class="col-md-3">
-                        <button class="btn btn-primary w-100 category-btn" data-filter="ict-installations">ICT Installations</button>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-primary w-100 category-btn" data-filter="smart-classrooms">Smart Classrooms</button>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-primary w-100 category-btn" data-filter="electric-earthing">Electric & Earthing Works</button>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-primary w-100 category-btn" data-filter="furniture-manufacturing">Furniture Manufacturing & Installation</button>
-                    </div>
-                </div>
-        
-                <!-- Project Showcase -->
-                <div class="row project-grid">
-                    <!-- Project Items (to be dynamically filtered based on category) -->
-                    <div class="col-md-4 project-item ict-installations d-lg-block">
-                        <div class="card">
-                            <img src="assets/img/1556021777Banner.jpg" class="card-img-top" alt="ICT Installation Project">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Name 1</h5>
-                                <p class="card-text">Year: 2023</p>
-                                <a href="#project1" class="btn btn-primary">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 project-item smart-classrooms">
-                        <div class="card">
-                            <img src="assets/img/1673695737BLog-1.jpg" class="card-img-top" alt="Smart Classroom Project">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Name 2</h5>
-                                <p class="card-text">Year: 2022</p>
-                                <a href="#project2" class="btn btn-primary">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 project-item electric-earthing">
-                        <div class="card">
-                            <img src="assets/img/elements-media-storage-BDI-tune-LS-boy-apartment.webp" class="card-img-top" alt="Electric & Earthing Project">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Name 3</h5>
-                                <p class="card-text">Year: 2021</p>
-                                <a href="#project3" class="btn btn-primary">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 project-item furniture-manufacturing">
-                        <div class="card">
-                            <img src="assets/img/1673695737BLog-1.jpg" class="card-img-top" alt="Electric & Earthing Project">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Name 4</h5>
-                                <p class="card-text">Year: 2024</p>
-                                <a href="#project3" class="btn btn-primary">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Repeat for other projects -->
+
+                <!-- View All Projects Button -->
+                <div class="text-center mt-4">
+                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer Section -->
@@ -148,7 +168,6 @@
                         <li class="pt-2"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
                         <li class="pt-2"><a href="services.html" class="text-light text-decoration-none">Services</a></li>
                         <li class="pt-2"><a href="projects.html" class="text-light text-decoration-none">Projects</a></li>
-                        <li class="pt-2"><a href="blogs.html" class="text-light text-decoration-none">Blog</a></li>
                         <li class="pt-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
@@ -165,7 +184,7 @@
                 </div>
 
                 <!-- Copyright Info -->
-                <div class="col-lg-12 text-center text-md-center position-fixed bg-dark pt-3 footer-bottom">
+                <div class="col-lg-12 text-center text-md-center bg-dark pt-3 footer-bottom">
                     <h5 class="fw-bold">Lakshya Complete Solutions</h5>
                     <p class="small">&copy; 2025 Lakshya Complete Solutions Pvt. Ltd. All rights reserved.</p>
                 </div>
