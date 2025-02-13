@@ -1,3 +1,18 @@
+$(document).ready(function () {
+    // Get the current page URL
+    let currentPath = window.location.pathname.split("/").pop(); 
+
+    // Remove active class from all links
+    $(".nav-link").removeClass("active");
+
+    // Add active class to the link that matches the current URL
+    $(".nav-link").each(function () {
+        if ($(this).attr("href") === currentPath) {
+            $(this).addClass("active");
+        }
+    });
+});
+
 // JavaScript for filtering projects by category
 document.querySelectorAll('.category-btn').forEach(button => {
     button.addEventListener('click', (e) => {
