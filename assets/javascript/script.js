@@ -3,7 +3,7 @@ $(document).ready(function () {
     let currentPath = window.location.pathname.split("/").pop(); 
 
     // Remove active class from all links
-    $("header .nav-link").removeClass("active");
+    $(".nav-link").removeClass("active");
 
     // Add active class to the link that matches the current URL
     $(".nav-link").each(function () {
