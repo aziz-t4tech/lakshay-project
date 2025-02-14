@@ -19,15 +19,15 @@ $(document).ready(function () {
     // navigation links Animation
     // for header image
     if(window.innerWidth > 600) {
-        
+        gsap.from(".navbar .navbar-brand", {opacity: 0, x: 100, stagger: 0.2, duration: 1.5});
+    
+        // for navigation links
+        gsap.from(".navbar .navbar-nav .nav-item", {opacity: 0, y: 50, stagger: 0.2, duration: 1});
+    
+        // for search icon
+        gsap.from(".navbar .fa-magnifying-glass", {opacity: 0, x: -100, stagger: 0.2, duration: 1.5});
+
     }
-    gsap.from(".navbar .navbar-brand", {opacity: 0, x: 100, stagger: 0.2, duration: 1.5});
-
-    // for navigation links
-    gsap.from(".navbar .navbar-nav .nav-item", {opacity: 0, y: 50, stagger: 0.2, duration: 1});
-
-    // for search icon
-    gsap.from(".navbar .fa-magnifying-glass", {opacity: 0, x: -100, stagger: 0.2, duration: 1.5});
 });
 
 
