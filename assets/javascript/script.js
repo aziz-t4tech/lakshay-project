@@ -14,8 +14,8 @@ $(document).ready(function () {
         if ($(this).attr("href") === currentPath) {
             $(this).addClass("active");
         }
-        else {
-            $("this").addClass("active")
+        else if (window.location.pathname === "/" || window.location.pathname === "") {
+            $("nav ul li a:last-child").addClass("active"); // Add 'active' class to the first nav link
         }
     });
 
