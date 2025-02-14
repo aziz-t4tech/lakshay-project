@@ -14,19 +14,20 @@ $(document).ready(function () {
         if ($(this).attr("href") === currentPath) {
             $(this).addClass("active");
         }
+        else {
+            $("this").addClass("active")
+        }
     });
 
     // navigation links Animation
     // for header image
-    if(window.innerWidth > 600) {
-        gsap.from(".navbar .navbar-brand", {opacity: 0, x: 100, stagger: 0.2, duration: 1.5});
-    
-        // for navigation links
-        gsap.from(".navbar .navbar-nav .nav-item", {opacity: 0, y: 50, stagger: 0.2, duration: 1});
-    
-        // for search icon
-        gsap.from(".navbar .fa-magnifying-glass", {opacity: 0, x: -100, stagger: 0.2, duration: 1.5});
-    }
+    gsap.from(".navbar .navbar-brand", {opacity: 0, x: 100, stagger: 0.2, duration: 1.5});
+
+    // for navigation links
+    gsap.from(".navbar .navbar-nav .nav-item", {opacity: 0, y: 50, stagger: 0.2, duration: 1});
+
+    // for search icon
+    gsap.from(".navbar .fa-magnifying-glass", {opacity: 0, x: -100, stagger: 0.2, duration: 1.5});
 });
 
 
@@ -38,94 +39,92 @@ $(document).ready(function() {
 });
 
 // home about code
-if(window.innerWidth > 600) {
-    gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from("#about p", {
-    opacity: 0,
-    y: -100,
-    stagger: 2, // Reduced stagger for smoother effect
-    duration: 1.5,
-    ease: "bounce.out",
-    scrollTrigger: {
-        trigger: "#about",
-        start: "top 50%", // Starts when #about reaches 80% of the viewport
-        toggleActions: "play none none none" // Play animation once
-    }
-    });
+gsap.from("#about p", {
+  opacity: 0,
+  y: -100,
+  stagger: 2, // Reduced stagger for smoother effect
+  duration: 1.5,
+  ease: "bounce.out",
+  scrollTrigger: {
+    trigger: "#about",
+    start: "top 50%", // Starts when #about reaches 80% of the viewport
+    toggleActions: "play none none none" // Play animation once
+  }
+});
 
-    gsap.from("#about img", {
-    opacity: 0,
-    x: 200,
-    stagger: 0.5,
-    duration: 1.5,
-    rotation: 180,
-    scale: 2,
-    ease: "power2.out", // Changed to power2.out for a smoother effect
-    scrollTrigger: {
-        trigger: "#about",
-        start: "top 50%",
-        toggleActions: "play none none none"
-    }
-    });
+gsap.from("#about img", {
+  opacity: 0,
+  x: 200,
+  stagger: 0.5,
+  duration: 1.5,
+  rotation: 180,
+  scale: 2,
+  ease: "power2.out", // Changed to power2.out for a smoother effect
+  scrollTrigger: {
+    trigger: "#about",
+    start: "top 50%",
+    toggleActions: "play none none none"
+  }
+});
 
-    // home key-services content
-    // Register ScrollTrigger plugin
+// home key-services content
+// Register ScrollTrigger plugin
 
-    gsap.from("#key-services img", {
-    y: -100,
-    opacity: 0,
+gsap.from("#key-services img", {
+  y: -100,
+  opacity: 0,
+  stagger: 1,
+  scale: 1,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: "#key-services",
+    start: "top 60%", // Triggers when #key-services reaches 80% of viewport
+    toggleActions: "play none none none"
+  }
+});
+
+gsap.from("#key-services ul li", {
+  opacity: 0,
+  y: -100,
+  stagger: 0.5,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: "#key-services",
+    start: "top 60%", // Adjusted for better timing
+    toggleActions: "play none none none"
+  }
+});
+
+
+// home certifications content
+
+gsap.from("#certifications .CertificationsImg img", {
+    y: 400,
     stagger: 1,
-    scale: 1,
+    duration: 2.7,
+    ease: "power2.out",
+    scrollTrigger: {
+    trigger: "#certifications",
+    start: "top 60%", // Triggers animation when #certifications reaches 80% of viewport
+    toggleActions: "play none none none"
+  }
+});
+
+gsap.from("#certifications ul li", {
+    x: 700,
+    stagger: 0.2,
     duration: 1,
     ease: "power2.out",
     scrollTrigger: {
-        trigger: "#key-services",
-        start: "top 60%", // Triggers when #key-services reaches 80% of viewport
-        toggleActions: "play none none none"
-    }
-    });
-
-    gsap.from("#key-services ul li", {
-    opacity: 0,
-    y: -100,
-    stagger: 0.5,
-    duration: 1,
-    ease: "power2.out",
-    scrollTrigger: {
-        trigger: "#key-services",
-        start: "top 60%", // Adjusted for better timing
-        toggleActions: "play none none none"
-    }
-    });
-
-
-    // home certifications content
-
-    gsap.from("#certifications .CertificationsImg img", {
-        y: 400,
-        stagger: 1,
-        duration: 2.7,
-        ease: "power2.out",
-        scrollTrigger: {
-        trigger: "#certifications",
-        start: "top 60%", // Triggers animation when #certifications reaches 80% of viewport
-        toggleActions: "play none none none"
-    }
-    });
-
-    gsap.from("#certifications ul li", {
-        x: 700,
-        stagger: 0.2,
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-        trigger: "#certifications",
-        start: "top 60%",
-        toggleActions: "play none none none"
-    }
-    });
-}
+    trigger: "#certifications",
+    start: "top 60%",
+    toggleActions: "play none none none"
+  }
+});
 
 
 // jQuery Filtering Script
