@@ -26,7 +26,6 @@ $(document).ready(function () {
     
         // for search icon
         gsap.from(".navbar .fa-magnifying-glass", {opacity: 0, x: -100, stagger: 0.2, duration: 1.5});
-
     }
 });
 
