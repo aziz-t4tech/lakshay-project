@@ -18,7 +18,7 @@ $(document).ready(function () {
 
     // navigation links Animation
     // for header image
-    if(window.inner)
+    if(window.innerWidth)
     gsap.from(".navbar .navbar-brand", {opacity: 0, x: 100, stagger: 0.2, duration: 1.5});
 
     // for navigation links
