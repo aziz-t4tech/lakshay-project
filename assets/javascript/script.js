@@ -49,18 +49,17 @@ gsap.from("#about p", {
   ease: "bounce.out",
   scrollTrigger: {
     trigger: "#about",
-    start: "top 50%", // Starts when #about reaches 80% of the viewport
+    start: "top 50%", // Starts when #about reaches 50% of the viewport
     toggleActions: "play none none none" // Play animation once
   }
 });
 
 gsap.from("#about img", {
   opacity: 0,
-  x: 200,
+  x: -200,
   stagger: 0.5,
   duration: 1.5,
-  rotation: 180,
-  scale: 2,
+  rotation: -180,
   ease: "power2.out", // Changed to power2.out for a smoother effect
   scrollTrigger: {
     trigger: "#about",
@@ -81,7 +80,7 @@ gsap.from("#key-services img", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: "#key-services",
-    start: "top 60%", // Triggers when #key-services reaches 80% of viewport
+    start: "top 60%", // Triggers when #key-services reaches 60% of viewport
     toggleActions: "play none none none"
   }
 });
@@ -109,13 +108,13 @@ gsap.from("#certifications .CertificationsImg img", {
     ease: "power2.out",
     scrollTrigger: {
     trigger: "#certifications",
-    start: "top 60%", // Triggers animation when #certifications reaches 80% of viewport
+    start: "top 60%", // Triggers animation when #certifications reaches 60% of viewport
     toggleActions: "play none none none"
   }
 });
 
 gsap.from("#certifications ul li", {
-    x: 700,
+    x: -700,
     stagger: 0.2,
     duration: 1,
     ease: "power2.out",
